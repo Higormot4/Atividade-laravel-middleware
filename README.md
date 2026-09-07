@@ -478,18 +478,6 @@ E:
 
 ---
 
-## Página inexistente
-
-Também é possível testar o `fallback` acessando:
-
-```text
-http://127.0.0.1:8000/teste
-```
-
-Como `/teste` não existe, o Laravel executará a rota `fallback`.
-
----
-
 # Verificando as rotas
 
 Para visualizar as rotas cadastradas no Laravel, pode ser utilizado:
@@ -573,8 +561,6 @@ Com este projeto foi possível colocar em prática o funcionamento de **Routes, 
 A aplicação possui uma página inicial, uma rota protegida e uma tela de acesso negado.
 
 O Middleware `VerificarPermissao` adiciona as mensagens à requisição, o `AcessoController` recebe essas informações e a View `acesso.blade.php` apresenta o resultado para o usuário.
-
-Também foi implementada uma rota `fallback` para tratar endereços que não existem.
 
 O projeto atende à proposta da atividade ao demonstrar, de forma prática, como o Laravel pode controlar o fluxo de uma requisição utilizando Middleware, Controller e View.
 
